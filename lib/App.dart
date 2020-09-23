@@ -1,5 +1,5 @@
 
-import 'package:FlutterDemo/case/HelloAction.dart';
+import 'package:FlutterDemo/CaseFactory.dart';
 import 'package:FlutterDemo/model/Case.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +34,7 @@ class _MainPageState extends State<_MainPage> {
   @override
   void initState() {
     super.initState();
-    _cases.add(Case('Hello', action: new HelloAction()));
+    _cases.addAll(CaseFactory.cases());
   }
 
   @override
