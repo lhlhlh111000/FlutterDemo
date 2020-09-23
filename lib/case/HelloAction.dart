@@ -1,5 +1,5 @@
 import 'package:FlutterDemo/model/Case.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:FlutterDemo/utils/ToastUtil.dart';
 
 class HelloAction extends ActualAction {
 
@@ -8,6 +8,6 @@ class HelloAction extends ActualAction {
 //    Scaffold.of(context).showSnackBar(SnackBar(
 //      content: Text('Hello world'),
 //    ));
-    Fluttertoast.showToast(msg: 'Hello world');
+    ToastUtil.toast('Hello world');
   }
 }
